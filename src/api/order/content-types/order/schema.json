@@ -4,7 +4,8 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "order"
+    "displayName": "order",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,25 +13,32 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
     "domicilio": {
-      "type": "string"
+      "type": "string",
+      "required": false
+    },
+    "trabajos": {
+      "type": "richtext",
+      "required": false
+    },
+    "telefono": {
+      "type": "biginteger",
+      "required": false
+    },
+    "realizado": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "observaciones": {
+      "type": "richtext",
+      "required": false
     },
     "fecha": {
       "type": "date"
-    },
-    "trabajos": {
-      "type": "richtext"
-    },
-    "telefono": {
-      "type": "biginteger"
-    },
-    "realizado": {
-      "type": "boolean"
-    },
-    "observaciones": {
-      "type": "richtext"
     }
   }
 }
